@@ -7,13 +7,17 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-// MySQL connection
+require('dotenv').config();
+
+
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'todo'
+  host: process.env.DATABASE_HOST,
+  user: process.env.DATABASE_USER,
+  password: process.env.DATABASE_PASSWORD,
+  database: process.env.DATABASE_NAME
 });
+
+
 
 app.use(cors());
 app.use(bodyParser.json());
