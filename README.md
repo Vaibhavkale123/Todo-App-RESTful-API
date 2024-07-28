@@ -15,7 +15,7 @@ Getting Started
 
 1. Clone the repository
 ```
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/Vaibhavkale123/Todo-App-RESTful-API.git
 ```
 2. Install the dependencies
 ```
@@ -26,7 +26,7 @@ npm install
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
-DB_NAME=todos_db
+DB_NAME=todos
 PORT=3000
 ```
 4. Create the database and table
